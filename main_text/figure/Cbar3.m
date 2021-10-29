@@ -1,6 +1,6 @@
 function bar_h = Cbar3(Z,C,b,y)
 %function to specify values for color of columns.  Found on Stackoverflow 
-%original code by user EBH.
+%original code by user EBH. see https://stackoverflow.com/questions/45423394/how-to-set-arbitrary-colors-for-bars-in-a-3d-bar-plot
 % Z - The data
 % C - CData (if other then Z values)
 % b - Minimum absolute value to keep colored
