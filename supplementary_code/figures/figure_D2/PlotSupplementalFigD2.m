@@ -41,5 +41,10 @@ Figure_D2=figure;
     %Index 40  #d63d4f, Index 48  #960024, Index 56  #78000f, 
     %Index 64  #1c0000
  
-
+    %%%%satellite proportion subplot colormaps: Index 1  #000326,
+    %Index 4  #00406e, Index 8  #0070a3, Index 12  #2487bd,
+    %Index 16  #73bdf5, Index 24  #adf5ff, Index 30  #d9faff,
+    %Index 32  white, Index 35  #ffebed, Index 40  #ffccd1,
+    %Index 48  #bf8282, %Index 52  #d63d4f, Index 56  #960024,
+    %Index 60  #78000f, Index 64  #1c0000
 
