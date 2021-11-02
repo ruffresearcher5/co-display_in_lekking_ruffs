@@ -1,6 +1,6 @@
-%%%%%Script for ploting supplementary figure C3%%%%%%
+%%%%%Script for ploting supplementary figure D3%%%%%%
 
-Figure_C3=figure;
+Figure_D3=figure;
     Plot_A_a=plotGr_sens_lek_comp("high");
     Plot_A_b=plotGr_sens_lek_comp("medium");
     Plot_A_c=plotGr_sens_lek_comp("low");
