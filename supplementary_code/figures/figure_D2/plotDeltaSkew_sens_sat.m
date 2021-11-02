@@ -1,10 +1,10 @@
 function SkewPlot = plotDeltaSkew_sens_sat(Sat_strength)
-%%%%%Subplot function for supplementary figure C1_D_strong-weak%%%%%
+%%%%%Subplot function for supplementary figure D2_D_strong-weak%%%%%
 %Plot of predicted skew when a co-display is present on the lek. Plot is
 %specified for different satellite streangths: strong, medium, and weak.
   
  
-H="Sk";
+
 %matrix for predicted values from function
 MatDeltaSk=zeros(7,7);
 %Satellite competitive ability
