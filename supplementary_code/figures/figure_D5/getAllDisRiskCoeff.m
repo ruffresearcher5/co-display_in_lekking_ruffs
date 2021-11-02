@@ -10,7 +10,7 @@ Dr_vec=zeros(1,147);%empty vector
         Dr_sub_vec=zeros(1,total_length);
         %for loop for each value of 
         for i = 1:total_length
-                Dr_sub=Disruption_risk(all_combos_sub(1,i)...
+                Dr_sub=Dis_risk(all_combos_sub(1,i)...
                     ,all_combos_sub(2,i),sub);
                 Dr_sub_vec(1,i)=Dr_sub;
         end
