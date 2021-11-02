@@ -14,13 +14,12 @@ function DeltaSkew = Co_display_delta_Skew( L,r,H,Sat_Com_ab,Comp_level)
 %   when resdent competition is a at a given level.
 if r == 1
 
-    alphacops=ResCr_Acc_Res( L,r,H,Sat_Com_ab,Comp_level);
+    alphacops=Res_payoffs_res_choice( L,r,H,Sat_Com_ab,Comp_level);
 else
-    alphacops=ResCopOWSat(L,1,H);
+    alphacops=Single_res_cops(L,1,H);
 end
-Scd=alphacops/(TotalCopsonLek( L )-SatGs( L,r,H,Sat_Com_ab,Comp_level ));
-Swocd=SkewofLek( L );
+Scd=alphacops/(Total_cops_on_lek( L )-Satellite_rewards( L,r,H,Sat_Com_ab,Comp_level ));
+Swocd=Skew_of_lek( L );
 DeltaSkew=Scd-Swocd;
 
 end
-
