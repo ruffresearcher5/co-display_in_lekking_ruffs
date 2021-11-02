@@ -60,7 +60,7 @@ X_label="Residents/lek";
 Y_label="Resident rank";
 %Make a figure
 switch Sat_Com_ab
-    case "high"
+    case "strong"
         SatPerPlot=subplot(3,4,1);
                 Cbar3(MatPercCopSat,MatPercCopSat)
                 ylabel(Y_label,'Position',[-1,4,0],'Rotation',90)
@@ -108,7 +108,7 @@ switch Sat_Com_ab
                 colormap(SatPerPlot,flipud(pink));
                 caxis manual
                 caxis([0 36]);
-      case "low"
+      case "weak"
         SatPerPlot=subplot(3,4,9);
                 Cbar3(MatPercCopSat,MatPercCopSat)
                 xlabel(X_label,'Position',[4.05,9,0])
