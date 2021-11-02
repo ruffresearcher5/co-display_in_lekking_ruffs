@@ -60,7 +60,7 @@ X_label="Residents/lek";
 
 %Make a figure
 switch Sat_Com_ab
-    case "high"
+    case "strong"
         SatPerPlot=subplot(3,4,2);
                 Cbar3(MatPercCopSat,MatPercCopSat)
                 xlim(X_axesLimits)
@@ -106,7 +106,7 @@ switch Sat_Com_ab
                 colormap(SatPerPlot,flipud(pink));
                 caxis manual
                 caxis([0 36]);
-      case "low"
+      case "weak"
         SatPerPlot=subplot(3,4,10);
                 Cbar3(MatPercCopSat,MatPercCopSat)
                 xlabel(X_label,'Position',[4.05,9,0])
