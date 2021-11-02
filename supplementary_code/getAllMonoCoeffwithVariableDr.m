@@ -10,7 +10,7 @@ Mr_vec=zeros(1,147);%empty vector
         Mr_sub_vec=zeros(1,total_length);
         %for loop for each value of 
         for i = 1:total_length
-                Mr_sub=Mono_Coeff(all_combos_sub(1,i)...
+                Mr_sub=Mono_coeff(all_combos_sub(1,i)...
                     ,all_combos_sub(2,i),"medium",sub);
                 Mr_sub_vec(1,i)=Mr_sub;
         end
