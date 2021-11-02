@@ -1,6 +1,6 @@
 function SensMonoSatGains = plotMonovSatgains( )
 %function for graphing the relationship between monopolization coefficient
-%and Satellite gains in a co-display. 
+%and Satellite rewards in a co-display. 
 %get model generated data
 MonoCoeff=getAllMonoCoeff();
 MonoCoeff=MonoCoeff.';
@@ -15,10 +15,10 @@ newdata=predict(mdl,MonoCoeff);
 
 %plot
 y_Label="Satellite co-display reward";
-y_limits=[-1 5];
-x_limits=[0.2 1.00];
+y_limits=[0 5];
+x_limits=[0.25 1.00];
 x_ticks=[0.25 0.50 0.75 1.00];
-y_ticks=[-1 1 3 5];
+y_ticks=[1 2 3 4 5];
 Title_plot="B";
 Title_position=[0.15 5.2];
 SensMonoSatGains=subplot(2,2,2);
