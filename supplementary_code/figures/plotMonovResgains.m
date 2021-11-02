@@ -1,6 +1,6 @@
 function SensMonoResGains = plotMonovResgains( )
 %function for graphing the relationship between monopolization coefficient
-%and resident gains proportion of copulations in a co-display. 
+%and resident rewards proportion of copulations in a co-display. 
 MonoCoeff=getAllMonoCoeff();
 MonoCoeff=MonoCoeff.';
 ResGains = getAllMonoResGains( );
@@ -13,10 +13,10 @@ mdl=fitlm(MonoCoeff,ResGains);
 newdata=predict(mdl,MonoCoeff);
 %plot
 y_Label="Resident co-display reward";
-y_limits=[-1 5];
-x_limits=[0.2 1.00];
+y_limits=[0 5];
+x_limits=[0.25 1.00];
 x_ticks=[0.25 0.50 0.75 1.00];
-y_ticks=[-1 1 3 5];
+y_ticks=[1 2 3 4 5];
 Title_plot="A";
 Title_position=[0.15 5.2];
 SensMonoResGains=subplot(2,2,1);
