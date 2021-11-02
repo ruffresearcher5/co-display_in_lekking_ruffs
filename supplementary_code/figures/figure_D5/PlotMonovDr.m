@@ -1,4 +1,4 @@
-%%%%%Plot Mr and Dr togather%%%%%
+%%%%%Plot figure D5 showing disruption risk influence on monopolization coefficient%%%%%
 Mr_vec=getAllMonoCoeffwithVariableDr();
 Dr_vec=getAllDisRiskCoeff();
 x_ticks=[0.00 0.25 0.50 0.75 1.00];
