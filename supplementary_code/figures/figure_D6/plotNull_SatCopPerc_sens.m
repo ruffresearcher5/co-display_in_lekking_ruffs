@@ -1,5 +1,5 @@
 function SatPerPlot = plotNull_SatCopPerc_sens( Sat_Com_ab )
-%%%%%Subplot function for supplementary figure D6_A_low-high%%%%%
+%%%%%Subplot function for supplementary figure D6_A_weak-strong%%%%%
 %Plot of percent of copulations on a lek the satellite can 
 %obtain when co-displaying. Plot is specified for different 
 %satellite strengths levels: weak, medium, and strong. This is 
