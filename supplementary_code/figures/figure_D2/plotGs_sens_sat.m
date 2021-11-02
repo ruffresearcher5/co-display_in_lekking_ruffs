@@ -1,6 +1,6 @@
 function GsskPlot = plotGs_sens_sat(Sat_Com_ab)
-%%%%%Subplot function for supplementary figure C2_weak-strong%%%%%
-%Plot of predicted satellite copulation gains given the fitness loss
+%%%%%Subplot function for supplementary figure D2_weak-strong%%%%%
+%Plot of predicted satellite copulation rewards given the fitness loss
 %scenario where the most copulations are drawn away from high 
 %ranking residents by a co-display under different satellite competitive 
 %abilities: weak, medium, and strong. 
@@ -10,7 +10,7 @@ h="Sk";
 Mat_G_Sat_s=zeros(7,7);
 %Satellite competitive ability
 Comp_level="medium";
-%Resident copulation gains by lek size
+%Resident copulation rewards by lek size
 %L=1
 %L=1
 Mat_G_Sat_s(1:7,1)=[Satellite_rewards(1,1,h,Sat_Com_ab,Comp_level),...
