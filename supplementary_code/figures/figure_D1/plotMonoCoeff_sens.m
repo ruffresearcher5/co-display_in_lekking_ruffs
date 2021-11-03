@@ -1,6 +1,8 @@
 function MrPlot = plotMonoCoeff_sens(Sat_Com_ab)
-%%%%%Subplot function for supplementary figure C1_A,B,C%%%%%
-%Plot of assumed function for resident monopolization coefficients. 
+%%%%%Subplot function for supplementary figure D1_A,B,C%%%%%
+%Plot of assumed function for resident monopolization coefficients, under
+%specified satellite strength, Sat_Com_ab, that can take the inputs strong,
+%medium, or weak.
  
 %matrix for predicted values from function
 MatMono=zeros(7,7);
@@ -190,4 +192,3 @@ switch Sat_Com_ab
                     
 
 end
-   
