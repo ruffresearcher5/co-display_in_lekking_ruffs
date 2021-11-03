@@ -1,5 +1,5 @@
 function MrPlot = plotMonoCoeff()
-%%%%%Subplot function for supplementary figure B2_C%%%%%
+%%%%%Subplot function for supplementary figure B2_A%%%%%
 %Plot of assumed function for resident monopolization coefficients. 
  
 %matrix for predicted values from function
