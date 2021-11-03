@@ -1,5 +1,5 @@
 function Skew_extractions = SkewPlotforSupplemental()
-%%%%%Subplot function for supplementary figure B2_A%%%%%
+%%%%%Subplot function for supplementary figure B2_B%%%%%
 %Plots estimated skew regressions from Widemo and Owens (1995): modified 
 %regression from digitized reported line, extracted predictions from 
 %reported line, and reported regression. 
@@ -60,6 +60,13 @@ Skew_extractions=subplot(2,2,2);
         
  
 end
+ 
+
+
+
+
+
+
  
 
 
