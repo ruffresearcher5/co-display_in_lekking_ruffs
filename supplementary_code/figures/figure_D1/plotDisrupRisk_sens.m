@@ -1,6 +1,8 @@
 function DrPlot = plotDisrupRisk_sens(Comp_level)
-%%%%%Subplot function for supplementary figure C1_D,F,G%%%%%
-%Plot of assumed function for resident disruption risk. 
+%%%%%Subplot function for supplementary figure D1_D,F,G%%%%%
+%Plot of assumed function for resident disruption risk, under different 
+%levels of resident competition levels, Comp_level, which can be specified
+%as low, medium, or high.
 
 %Preduction matrix
 MatRisk=zeros(7,7);
