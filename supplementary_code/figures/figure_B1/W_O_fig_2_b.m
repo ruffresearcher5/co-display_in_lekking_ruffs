@@ -1,6 +1,6 @@
 function W_O_fig_2_b = W_O_fig_2_b()
-%W_O_FIG_2_B Summary of this function goes here
-%   Detailed explanation goes here
+%W_O_FIG_2_B inserts modified version of Widemo and Owens (1995) figure 2b
+%into fig B1.
 I = imread('O_W_fig_2_b.jpg');
 titles_spot=[-1.5 1.01];
 x_axis_tit="Mean residents/lek";
