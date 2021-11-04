@@ -1,10 +1,10 @@
-function PercSatCopPlot = plotPercSatCop_UP()
-%%%%%Subplot function for supplementary figure B8_B%%%%%
+function PercSatCopPlot = plotPercSatCop_Sk()
+%%%%%Subplot function for supplementary figure B8_C%%%%%
 %Plot of predicted satellite percent copulations given the fitness loss
-%scenario where copulations are drawn by a co-display from each resident
-%court in equal proportion. 
+%scenario where copulations are drawn by a co-display in the highest 
+%proportion from low ranking residents. 
  
-h="UP";
+h="Sk";
 %matrix for predicted values from function
 MatPercCopSat=zeros(7,7);
 %Satellite competitive ability
@@ -54,21 +54,22 @@ MatPercCopSat(1:7,7)=[CopSatPerc(7,1,h,Sat_Com_ab,Comp_level),...
 
   
  
-Title_plot="B"; 
+Title_plot="C"; 
 X_axesLimits=[0 8];
 Y_axesLimits=[0 8];
-
 Title_position=[-1.5 0 1.1];
-
+Y_label="Resident rank";
+X_label="Residents/lek";
 Y_and_X_ticks=[1 2 3 4 5 6 7];
 Y_and_X_tick_labels=["" "" "" "" "" "" ""];
-
 %Make a figure
-PercSatCopPlot=subplot(2,2,2);
+PercSatCopPlot=subplot(2,2,4);
         Cbar3(MatPercCopSat,MatPercCopSat)
+        xlabel(X_label,'Position',[4.05,9,0])
+        ylabel(Y_label,'Position',[-1,4,0],'Rotation',90)
         xlim(X_axesLimits)
         ylim(Y_axesLimits)
-        xticks(Y_and_X_ticks)
+  xticks(Y_and_X_ticks)
         yticks(Y_and_X_ticks)
         xticklabels(Y_and_X_tick_labels)
         yticklabels(Y_and_X_tick_labels)
@@ -96,12 +97,11 @@ PercSatCopPlot=subplot(2,2,2);
         title(Title_plot,'FontSize',24)
         title (Title_plot, 'position' , Title_position)   
         colormap(flipud(pink));
-        set(PercSatCopPlot,'Position',[0.399 0.6 0.3347 0.3412])
+        set(PercSatCopPlot,'Position',[0.174 0.15 0.3347 0.3412])
        caxis manual
         caxis([0 20]);
          grid off
        set(PercSatCopPlot,'TickDir','out')
-        
 
 
 end
