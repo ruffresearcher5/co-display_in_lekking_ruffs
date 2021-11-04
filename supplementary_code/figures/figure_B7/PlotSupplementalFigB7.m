@@ -1,4 +1,4 @@
-%%%%%Script for ploting supplementary figure B6%%%%%%
+%%%%%Script for ploting supplementary figure B7%%%%%%
 
 Figure_B7=figure;
     Plot_A=PlotSkew_diff_null( );
