@@ -1,5 +1,5 @@
 function plotB = TotalCopsPlotforsupplemental()
-%%%%%Subplot function for supplementary figure B2_B%%%%%
+%%%%%Subplot function for supplementary figure B1_C%%%%%
 %Plot of estimated total copulations on a lek from Widemo and Owens (1995)
 %regression. The regressions are modified to include a satellite 
 %presence effect and the time a satellite spends with his prefered resident
