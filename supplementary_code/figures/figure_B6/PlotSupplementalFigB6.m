@@ -15,6 +15,16 @@ Figure_B6=figure;
     set(hr1,'TickDir','out','xticklabel',num2str(get(hr1,'xtick')',...
             '%.2f'))
 
+   %%%Note that to produce the graph from the presented in the supplementary
+    %the plot edit should be used to change the colormaps of the subplots.
+    %The subplots should be changed by eliminating the
+    %markers at all the indicies with the colormap editor then placing
+    %markers at the follwing locations with the given colors: 
     
+    
+    %%%%satellite reward subplots colormaps: Index 1 --> white,
+    %Index 4 --> #ffebed, Index 16 --> #ffccd1, Index 32 --> #bf8282,
+    %Index 40 --> #d63d4f, Index 48 --> #960024, Index 56 --> #78000f, 
+    %Index 64 --> #1c0000  
 
    
