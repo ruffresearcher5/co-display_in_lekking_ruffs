@@ -1,4 +1,4 @@
-%%%%%Script for ploting supplementary figure B7%%%%%%
+%%%%%Script for ploting supplementary figure B8%%%%%%
 
 Figure_B8=figure;
     Plot_A=plotPercSatCop_Null();
@@ -14,10 +14,12 @@ Figure_B8=figure;
             'Color','black','FontSize',18,'Rotation',90)
     set(hr1,'TickDir','out','xticklabel',num2str(get(hr1,'xtick')',...
             '%.1f'))
-  %%%Note that to produce the graph from the manuscript the plot edit 
-    %should be used to change the colormaps of the subplots. The markers
-    %should be changed in the following ways: 1) the marker at index 40
-    %should be moved to 23 and the marker at index 17 to index 22. 
+    %%%Note that to produce the graph from the supplementary the plot edit 
+    %should be used to change the colormaps of the subplots. The color map
+    %has two colors gray (##a6a6a6) and red (#D53E4F). For all subplots change
+    %color indicies. Make sure limits are 0 and 20 and then set the
+    %indicies 32 and 64 to the red color above and 1 and 31 to the gray color. 
+    %Remove all color markers but those that you set on 31 and 32.
     
     %graphing domains realistic copulation percentages
     text(11.3,4.0,0,{'< 10%'},'Color',[0.5 0.5 0.5],'FontSize',20,'Rotation',90)
