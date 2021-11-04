@@ -1,8 +1,8 @@
 function GrskPlot = plotResGr_main_text()
 %%%%%Subplot function for supplementary figure 2_A%%%%%
-%Plot of predicted resident copulation gains given the fitness loss
+%Plot of predicted resident copulation rewards given the fitness loss
 %scenario skew, where the most copulations are drawn away from high 
-%ranking residents by a co-display. 
+%ranking residents by a co-display.
   
  
 h="Sk";
