@@ -1,4 +1,7 @@
 function Skew_skew = PlotSkew_diff_up( )
+%subplot B7_A the change in skew due to co-display according to fitness 
+%scenario where co-display draw copulations from residents in the same 
+%proportion. 
 Leks=1:7;
 h="UP";
 Sat_strength="medium";
