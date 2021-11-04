@@ -1,6 +1,6 @@
 function GrskPlot = plotResGr_Sk()
 %%%%%Subplot function for supplementary figure B5_C%%%%%
-%Plot of predicted resident copulation gains given the fitness loss
+%Plot of predicted resident copulation rewards given the fitness loss
 %scenario where the most copulations are drawn away from high 
 %ranking residents by a co-display. 
   
