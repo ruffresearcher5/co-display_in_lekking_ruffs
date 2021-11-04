@@ -14,12 +14,18 @@ Figure_B5=figure;
             'Color','black','FontSize',18,'Rotation',90)
         set(hr1,'TickDir','out','xticklabel',num2str(get(hr1,'xtick')',...
             '%.2f'))
-    %%%Note that to produce the graph from the manuscript the plot edit 
-    %should be used to change the colormaps of the subplots. The markers
-    %should be changed in the following ways: 1) a marker should be added
-    %to index 9; 2)the marker at index 17 should be deleted; 3) the marker 
-    %at inde9 should be moved to index 21; 4)a marker should be added to 
-    %index 30 then moved to index 22. This must be done to each subplot. 
+
+ 
+ %%%Note that to produce the graph from the presented in the supplementary
+    %the plot edit should be used to change the colormaps of the subplots.
+    %The subplots should be changed by eliminating the
+    %markers at all the indicies with the colormap editor then placing
+    %markers at the follwing locations with the given colors: 
+    
+    %%%%resident reward subplot colormaps: Index 1 --> #808080, 
+    %Index 19 --> #d4d4d4, Index 22 --> white, Index 26 --> #d9faff, 
+    %Index 33 --> #adf5ff, Index 44 --> #73bdf5, Index 49 --> #2487bd, 
+    %Index  54 --> #0070a3, Index 59 --> #00406e, Index 64 --> #000326 
     
     %graphing domains of acceptance by residents
     arrows_reject=annotation('doublearrow',[.73 .73],[.155 .39]);
