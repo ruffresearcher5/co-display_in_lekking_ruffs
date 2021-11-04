@@ -1,6 +1,6 @@
 function GrnPlot = plotResGr_Null()
 %%%%%Subplot function for supplementary figure B5_A%%%%%
-%Plot of predicted resident copulation gains given the fitness loss
+%Plot of predicted resident copulation rewards given the fitness loss
 %scenario where no copulations are drawn by a co-display. 
  
 h="Null";
