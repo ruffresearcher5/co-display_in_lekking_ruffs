@@ -1,8 +1,8 @@
 function GsRskPlot = plotSatGs_RSk()
-%%%%%Subplot function for supplementary figure B5_D%%%%%
-%Plot of predicted satellite copulation gains given the fitness loss
+%%%%%Subplot function for supplementary figure B6_D%%%%%
+%Plot of predicted satellite copulation rewards given the fitness loss
 %scenario where most copulations are drawn away from low
-%ranking residents by a co-display. 
+%ranking residents by a co-display.  
  
 h="RSk";
 %matrix for predicted values from function
