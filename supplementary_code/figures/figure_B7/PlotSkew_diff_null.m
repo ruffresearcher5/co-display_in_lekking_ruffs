@@ -1,4 +1,6 @@
 function Skew_skew = PlotSkew_diff_null( )
+%subplot B7_A the change in skew due to co-display. Co-display doesn't
+%occur so the skew for co-display is made up of nans
 Leks=1:7;
 
 
