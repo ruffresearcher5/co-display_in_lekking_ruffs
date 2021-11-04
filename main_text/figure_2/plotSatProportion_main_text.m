@@ -1,5 +1,5 @@
 function SatproskPlot = plotSatProportion_main_text()
-%%%%%Subplot function for supplementary figure 1_C%%%%%
+%%%%%Subplot function for supplementary figure 2_C%%%%%
 %Plot of predicted satellite co-display copulation proportion given 
 %the fitness loss scenario where the most copulations are drawn away from 
 %high ranking residents by a co-display. 
