@@ -1,6 +1,6 @@
 function GrupPlot = plotResGr_UP()
 %%%%%Subplot function for supplementary figure B5_B%%%%%
-%Plot of predicted resident copulation gains given the fitness loss
+%Plot of predicted resident copulation rewards given the fitness loss
 %scenario where copulations are drawn in equal proportion from 
 %each resident by a co-display.
  
