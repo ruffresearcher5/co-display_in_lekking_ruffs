@@ -1,6 +1,6 @@
 function GsskPlot = plotSatGs_Sk()
-%%%%%Subplot function for supplementary figure B5_C%%%%%
-%Plot of predicted satellite copulation gains given the fitness loss
+%%%%%Subplot function for supplementary figure B6_C%%%%%
+%Plot of predicted satellite copulation rewards given the fitness loss
 %scenario where most copulations are drawn away from high
 %ranking residents by a co-display. 
  
