@@ -1,5 +1,5 @@
 function GsupPlot = plotSatGs_UP()
-%%%%%Subplot function for supplementary figure B6_A%%%%%
+%%%%%Subplot function for supplementary figure B5_A%%%%%
 %Plot of predicted satellite copulation gains rewards the fitness loss
 %scenario where copulations are drawn from each resident in 
 %equal proportion by a co-display. 
