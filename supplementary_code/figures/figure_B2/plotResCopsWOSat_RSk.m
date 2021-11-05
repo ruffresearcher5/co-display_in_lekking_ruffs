@@ -1,5 +1,5 @@
 function FrrskPlot = plotResCopsWOSat_RSk()
-%%%%%Subplot function for supplementary figure B3_D%%%%%
+%%%%%Subplot function for supplementary figure B2_D%%%%%
 %Plot of hypothetical fitness loss scenario where co-displays do draw the
 %heighest prportion of copulations from lowest ranked residents. 
  
