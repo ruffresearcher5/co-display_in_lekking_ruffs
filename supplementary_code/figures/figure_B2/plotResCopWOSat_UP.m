@@ -1,5 +1,5 @@
 function FrupPlot = plotResCopWOSat_UP()
-%%%%%Subplot function for supplementary figure B3_B%%%%%
+%%%%%Subplot function for supplementary figure B2_B%%%%%
 %Plot of hypothetical fitness loss scenario where co-displays do draw the
 %same prportion of copulations from all residents. 
  
