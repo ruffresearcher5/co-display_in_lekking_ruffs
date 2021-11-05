@@ -1,6 +1,6 @@
 %%%%%Script for ploting supplementary figure B7%%%%%%
 
-Figure_B8=figure;
+Figure_B7=figure;
     Plot_A=plotPercSatCop_Null();
     Plot_B=plotPercSatCop_UP();
     Plot_C=plotPercSatCop_Sk();
