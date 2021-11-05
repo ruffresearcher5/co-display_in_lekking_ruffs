@@ -1,5 +1,5 @@
 function Skew_skew = PlotSkew_diff_skew( )
-%subplot B7_C the change in skew due to co-display according to fitness 
+%subplot B6_C the change in skew due to co-display according to fitness 
 %scenario where co-display draws the highest proportion of copulations 
 %from high ranking residents.
 Leks=1:7;
