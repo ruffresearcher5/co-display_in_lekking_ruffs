@@ -1,5 +1,5 @@
 function FrnPlot = plotResCopWOSat_Null()
-%%%%%Subplot function for supplementary figure B3_A%%%%%
+%%%%%Subplot function for supplementary figure B2_A%%%%%
 %Plot of hypothetical fitness loss scenario where co-displays do not draw
 %copulations away from other residents on the lek. 
  
