@@ -1,4 +1,4 @@
-%%%%%Script for ploting supplementary figure B5%%%%%%
+%%%%%Script for ploting supplementary figure B4%%%%%%
 
 Figure_B5=figure;
     Plot_A=plotResGr_Null();
