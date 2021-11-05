@@ -1,6 +1,6 @@
 %%%%%Script for ploting supplementary figure B4%%%%%%
 
-Figure_B5=figure;
+Figure_B4=figure;
     Plot_A=plotResGr_Null();
     Plot_B=plotResGr_UP();
     Plot_C=plotResGr_Sk();
