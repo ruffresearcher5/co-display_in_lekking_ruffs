@@ -1,5 +1,5 @@
 function DrPlot = plotDisrupRisk()
-%%%%%Subplot function for supplementary figure B2_B%%%%%
+%%%%%Subplot function for supplementary figure B8_B%%%%%
 %Plot of assumed function for resident disruption risk. 
 Comp_level="medium";
 %Preduction matrix
