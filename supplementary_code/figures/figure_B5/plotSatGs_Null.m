@@ -1,5 +1,5 @@
 function GsnPlot = plotSatGs_Null()
-%%%%%Subplot function for supplementary figure B6_A%%%%%
+%%%%%Subplot function for supplementary figure B5_A%%%%%
 %Plot of predicted satellite copulation rewards given the fitness loss
 %scenario where no copulations are drawn by a co-display. 
  
