@@ -1,6 +1,6 @@
 %%%%%Script for ploting supplementary figure B5%%%%%%
 
-Figure_B6=figure;
+Figure_B5=figure;
     Plot_A=plotSatGs_Null();
     Plot_B=plotSatGs_UP();
     Plot_C=plotSatGs_Sk();
