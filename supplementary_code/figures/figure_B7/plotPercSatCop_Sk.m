@@ -1,5 +1,5 @@
 function PercSatCopPlot = plotPercSatCop_Sk()
-%%%%%Subplot function for supplementary figure B8_C%%%%%
+%%%%%Subplot function for supplementary figure B7_C%%%%%
 %Plot of predicted satellite percent copulations given the fitness loss
 %scenario where copulations are drawn by a co-display in the highest 
 %proportion from low ranking residents. 
