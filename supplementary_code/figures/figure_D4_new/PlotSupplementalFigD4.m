@@ -1,8 +1,9 @@
-%%%%%Plot figure D5 showing disruption risk influence on monopolization coefficient%%%%%
+%%%%%Plot figure D4 showing disruption risk influence on the Resident's
+%resource holding potential (RHP)
 Mr_vec=getAllMonoCoeffwithVariableDr();
 Dr_vec=getAllDisRiskCoeff();
 x_ticks=[0.00 0.25 0.50 0.75 1.00];
-y_ticks=[0.40 0.50 0.60 0.70 0.80 0.90];
+y_ticks=[0.20 0.4 0.60 0.8 1.00];
 for i = 1:49
  if i <=147
    plot_lines(Mr_vec,Dr_vec,i)
@@ -30,7 +31,7 @@ yticks(y_ticks)
 ylim([0.40 0.90])
 xlim([0.00 1.00])
 xlabel('Disruption risk')
-ylabel('Monopolization coefficient')
+ylabel('RHP')
 hold off
 function plot_lines(Mr_vec,Dr_vec,starting_num)
     Mr_sub_vec=[Mr_vec(1,starting_num) Mr_vec(1,starting_num+49)...
