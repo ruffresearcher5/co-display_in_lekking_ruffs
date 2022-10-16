@@ -1,5 +1,5 @@
 function plotC = TotalCopsPlotforsupplemental()
-%%%%%Subplot function for supplementary figure B1_C%%%%%
+%%%%%Subplot function for supplementary figure A1_C%%%%%
 %Plot of estimated total copulations on a lek from Widemo and Owens (1995)
 %regression. The regressions are modified to include a satellite 
 %presence effect and the time a satellite spends with his prefered resident
@@ -18,7 +18,7 @@ y_limits=[0 10];
 x_ticks=[0 1 2 3 4 5 6 7 8 9 10];
 y_ticks=[0 2.0 4.0 6.0 8.0 10.0];
 %X_tick_labels=["1" "" "3" "" "5" "" "7"];
-titles_spot=[-1.2 10.5];
+titles_spot=[0.6 10.1];
 y_axis_tit={"Total copulations"};
 x_axis_tit={"Residents/lek"};
 B_line=[0.0 2.0 4.0 6.0 8.0 10.0];
@@ -36,8 +36,8 @@ plotC=subplot(2,2,3);
         yticks(y_ticks)
         %xticklabels(X_tick_labels)
         set(plotC,'Fontsize',15)
-        title("C",'FontSize',24)
-        title ( 'C' , 'position' , titles_spot)
+        title("(c)",'FontSize',24)
+        title ( '(c)' , 'position' , titles_spot, 'FontWeight', 'Normal')
         ylabel(y_axis_tit,'FontSize',18)
         xlabel(x_axis_tit,'FontSize',18)
         set(plotC,'box','off','TickDir','out','yticklabel',...
