@@ -1,9 +1,9 @@
 function MrPlot = plotMonoCoeff_sens(Sat_Com_ab)
-%%%%%Subplot function for supplementary figure D1_A,B,C%%%%%
+%%%%%Subplot function for supplementary figure A9_a,b,c%%%%%
 %Plot of assumed function for resident monopolization coefficients, under
-%specified satellite strength, Sat_Com_ab, that can take the inputs strong,
+%specified satellite strength, Sat_Com_ab, that can take the input strong,
 %medium, or weak.
- 
+
 %matrix for predicted values from function
 MatMono=zeros(7,7);
 %competition amoung residents
@@ -51,12 +51,12 @@ X_axesLimits=[0 8];
 Y_axesLimits=[0 8];
 Y_and_X_ticks=[1 2 3 4 5 6 7];
 Y_and_X_tick_labels=["" "" "" "" "" "" ""];
-Title_position=[-1.5 0 1.1];
+Title_position=[0.75 0 1.1];
 X_label="Lek size (Residents/lek)";
 Y_label="Resident rank";
 switch Sat_Com_ab
     case "strong"
-        Title_plot="A"; 
+        Title_plot="(a)"; 
         %Make a figure
         MrPlot=subplot(3,2,1);
                 Cbar3(MatMono,MatMono)
@@ -89,15 +89,16 @@ switch Sat_Com_ab
                 a = get(MrPlot,'XTickLabel'); 
                 set(MrPlot,'XTickLabel',a,'Fontsize',12)
                 title(Title_plot,'FontSize',24)
-                title (Title_plot, 'position' , Title_position)   
-                colormap(MrPlot,flipud(autumn));
+                title (Title_plot, 'position' , Title_position, 'FontWeight',...
+            'Normal')   
+                colormap(colormap_Res_RHP_Dr( ));
                 caxis manual
                 caxis([0.0 1.0])
                 set(MrPlot,'Position',[0.2000 0.7093 0.3347 0.2157])
                                    grid off
        set(MrPlot,'TickDir','out')
     case "medium"
-        Title_plot="B"; 
+        Title_plot="(b)"; 
         %Make a figure
         MrPlot=subplot(3,2,3);
                 Cbar3(MatMono,MatMono)
@@ -130,15 +131,16 @@ switch Sat_Com_ab
                 a = get(MrPlot,'XTickLabel'); 
                 set(MrPlot,'XTickLabel',a,'Fontsize',12)
                 title(Title_plot,'FontSize',24)
-                title (Title_plot, 'position' , Title_position)   
-                colormap(MrPlot,flipud(autumn));
+                title (Title_plot, 'position' , Title_position,'FontWeight',...
+            'Normal')   
+                colormap(colormap_Res_RHP_Dr( ));
                 caxis manual
                 caxis([0.0 1.0])
                 set(MrPlot,'Position',[0.2000 0.4096 0.3347 0.2157])
                                    grid off
        set(MrPlot,'TickDir','out')
     case "weak"
-        Title_plot="C"; 
+        Title_plot="(c)"; 
         %Make a figure
         MrPlot=subplot(3,2,5);
                 Cbar3(MatMono,MatMono)
@@ -172,8 +174,9 @@ switch Sat_Com_ab
                 a = get(MrPlot,'XTickLabel'); 
                 set(MrPlot,'XTickLabel',a,'Fontsize',12)
                 title(Title_plot,'FontSize',24)
-                title (Title_plot, 'position' , Title_position)   
-                colormap(MrPlot,flipud(autumn));
+                title (Title_plot, 'position' , Title_position, 'FontWeight',...
+            'Normal')   
+                colormap(colormap_Res_RHP_Dr( ));
                 caxis manual
                 caxis([0.0 1.0])
                 set(MrPlot,'Position',[0.2000 0.1100 0.3347 0.2157])
@@ -182,8 +185,8 @@ switch Sat_Com_ab
                     [0.43 0.105 0.02 0.817],...
                     'YAxisLocation','right','XTick', C_Bticks);
                     hr1.Limits = [0.0 1.0];
-                    text(8.7,-1.5,0,...
-                        {'Monopolization coefficient'},...
+                    text(8.7,-6,0,...
+                        {'RHP'},...
                         'Color','black','FontSize',18,'Rotation',90)
                     set(hr1,'TickDir','out','xticklabel',...
                         num2str(get(hr1,'xtick')','%.2f'))
@@ -192,3 +195,4 @@ switch Sat_Com_ab
                     
 
 end
+   
