@@ -1,5 +1,5 @@
 function PercSatCopPlot = plotPercSatCop_Sk()
-%%%%%Subplot function for supplementary figure B7_C%%%%%
+%%%%%Subplot function for supplementary figure A7_c%%%%%
 %Plot of predicted satellite percent copulations given the fitness loss
 %scenario where copulations are drawn by a co-display in the highest 
 %proportion from low ranking residents. 
@@ -54,54 +54,23 @@ MatPercCopSat(1:7,7)=[CopSatPerc(7,1,h,Sat_Com_ab,Comp_level),...
 
   
  
-Title_plot="C"; 
-X_axesLimits=[0 8];
-Y_axesLimits=[0 8];
-Title_position=[-1.5 0 1.1];
-Y_label="Resident rank";
-X_label="Residents/lek";
-Y_and_X_ticks=[1 2 3 4 5 6 7];
-Y_and_X_tick_labels=["" "" "" "" "" "" ""];
-%Make a figure
-PercSatCopPlot=subplot(2,2,4);
-        Cbar3(MatPercCopSat,MatPercCopSat)
-        xlabel(X_label,'Position',[4.05,9,0])
-        ylabel(Y_label,'Position',[-1,4,0],'Rotation',90)
-        xlim(X_axesLimits)
-        ylim(Y_axesLimits)
-  xticks(Y_and_X_ticks)
-        yticks(Y_and_X_ticks)
-        xticklabels(Y_and_X_tick_labels)
-        yticklabels(Y_and_X_tick_labels)
-        %y tick labels
-        text(-0.65,0.87,0,'\alpha','color',[0.0 0.0 0.0],'FontSize',19)
-        text(-0.65,1.9,0,'\beta','color',[0.0 0.0 0.0],'FontSize',19)
-        text(-0.65,2.87,0,'\gamma','color',[0.0 0.0 0.0],'FontSize',19)
-        text(-0.6,3.9,0,'\delta','color',[0.0 0.0 0.0],'FontSize',19)
-        text(-0.6,4.87,0,'\epsilon','color',[0.0 0.0 0.0]','FontSize',19)
-        text(-0.6,5.9,0,'\zeta','color',[0.0 0.0 0.0],'FontSize',19)
-        text(-0.65,6.87,0,'\eta','color',[0.0 0.0 0.0],'FontSize',19)
-        %x tick labels
-        text(0.78,8.4,0,'1','color',[0.0 0.0 0.0],'FontSize',18)
-        %text(1.78,8.4,0,'2','color',[0.5 0.5 0.5],'FontSize',18)
-        text(2.78,8.4,0,'3','color',[0.0 0.0 0.0],'FontSize',18)
-        %text(3.78,8.4,0,'4','color',[0.5 0.5 0.5],'FontSize',18)
-        text(4.78,8.4,0,'5','color',[0.0 0.0 0.0],'FontSize',18)
-        %text(5.78,8.4,0,'6','color',[0.5 0.5 0.5],'FontSize',18)
-        text(6.78,8.4,0,'7','color',[0.0 0.0 0.0],'FontSize',18)
-        az = 0;
-        el = 90;
-        view(az, el);
-        a = get(PercSatCopPlot,'XTickLabel'); 
-        set(PercSatCopPlot,'XTickLabel',a,'Fontsize',18)
-        title(Title_plot,'FontSize',24)
-        title (Title_plot, 'position' , Title_position)   
-        colormap(flipud(pink));
-        set(PercSatCopPlot,'Position',[0.174 0.15 0.3347 0.3412])
-       caxis manual
-        caxis([0 20]);
-         grid off
-       set(PercSatCopPlot,'TickDir','out')
+Title_plot="(c)"; 
+sub_plot_num=3;
+subplot_position=[0.174 0.14 0.3347 0.3412];
+response_colormap=colormap_sat_percent( );
+color_axis_limits=[0 20];
+C_ticks=[];
+c_ram_dec=[];
+C_ramp_position=[0 0 0 0];
+C_axis_lab=[];
+%%%plot
+PercSatCopPlot = ...
+    plot_response_rank_and_lek_size_four_subplot...
+    (Title_plot, sub_plot_num,subplot_position,MatPercCopSat,...
+    response_colormap,color_axis_limits,C_ramp_position,C_ticks,...
+    c_ram_dec,C_axis_lab);
+
+
 
 
 end
