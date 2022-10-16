@@ -1,6 +1,6 @@
-%%%%%Script for ploting supplementary figure B6%%%%%%
+%%%%%Script for ploting supplementary figure A6%%%%%%
 
-Figure_B6=figure;
+Figure_A6=figure;
     Plot_A=PlotSkew_diff_null( );
     Plot_B=PlotSkew_diff_up( );
     Plot_C=PlotSkew_diff_skew( );
