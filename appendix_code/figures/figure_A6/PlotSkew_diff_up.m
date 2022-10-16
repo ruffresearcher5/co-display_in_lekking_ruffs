@@ -1,7 +1,8 @@
 function Skew_skew = PlotSkew_diff_up( )
-%subplot B6_B the change in skew due to co-display according to fitness 
+%subplot A6_b the change in skew due to co-display according to fitness 
 %scenario where co-display draw copulations from residents in the same 
 %proportion. 
+
 Leks=1:7;
 h="UP";
 Sat_strength="medium";
@@ -21,9 +22,8 @@ y_limits=[0 1.0];
 x_ticks=[1 2 3 4 5 6 7];
 y_ticks=[0.00 0.25 0.50 0.75 1.00];
 X_tick_labels=["1" "" "3" "" "5" "" "7"];
-titles_spot=[-1.9 1.0];
-
-Plot_title="B";
+titles_spot=[0.6 1.0];;
+Plot_title="(b)";
 
 
 
@@ -41,7 +41,7 @@ Plot_title="B";
         yticks(y_ticks)
         xticklabels(X_tick_labels)
         set(Skew_skew,'Fontsize',18)
-        title(Plot_title,'FontSize',24)
+        title(Plot_title,'FontSize',24, 'FontWeight','Normal')
         title (Plot_title, 'position' , titles_spot)
         set(Skew_skew,'box','off','TickDir','out','yticklabel',num2str(get(gca,'ytick')','%.2f'))
         set(Skew_skew,'Position',[0.55 0.6 0.17 0.34])
