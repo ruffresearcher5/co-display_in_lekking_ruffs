@@ -1,5 +1,5 @@
 function DrPlot = plotDisrupRisk()
-%%%%%Subplot function for supplementary figure B8_B%%%%%
+%%%%%Subplot function for supplementary figure A8_b%%%%%
 %Plot of assumed function for resident disruption risk. 
 Comp_level="medium";
 %Preduction matrix
@@ -35,10 +35,10 @@ MatRisk(1:7,7)=[Dis_risk(7,1,Comp_level),...
  
   
  
-Title_plot="B"; 
+Title_plot="(b)"; 
 XandY_axesLimits=[0 8]; 
 C_Bticks=[0.00 0.25 0.50 0.75 1.00]; 
-Title_position=[-1.5 0 1.1];
+Title_position=[0.75 0 1.1];
 Y_and_X_ticks=[1 2 3 4 5 6 7];
 Y_and_X_tick_labels=["" "" "" "" "" "" ""];
 X_label="Residents/lek";
@@ -74,11 +74,11 @@ DrPlot=subplot(2,2,2);
         view(az, el);
         a = get(DrPlot,'XTickLabel'); 
         set(DrPlot,'XTickLabel',a,'Fontsize',18)
-        title(Title_plot,'FontSize',24)
+        title(Title_plot,'FontSize',24, 'FontWeight', 'Normal')
         title (Title_plot, 'position' , Title_position)
         caxis manual
         caxis([0.00 1.00]);
-        colormap(DrPlot,flipud(copper));
+        colormap(colormap_Res_RHP_Dr( ))
         set(DrPlot,'zticklabel',num2str(get(gca,'ztick')','%.2f'),...
             'TickDir','out')
         h1 = colorbar('Ticks',[],'Position',[0.697 0.606 0.02 0.3],...
@@ -90,7 +90,7 @@ DrPlot=subplot(2,2,2);
             '%.2f'))
         set(DrPlot,'Position',[0.44 0.5838 0.3347 0.3412])
         grid off
-        set(DrPlot,'TickDir','out')
+        set(DrPlot,'TickDir','out', 'FontWeight', 'Normal')
 
 
 end
