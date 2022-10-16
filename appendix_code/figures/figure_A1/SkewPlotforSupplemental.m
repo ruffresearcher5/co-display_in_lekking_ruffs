@@ -1,5 +1,5 @@
 function Skew_extractions = SkewPlotforSupplemental()
-%%%%%Subplot function for supplementary figure B2_B%%%%%
+%%%%%Subplot function for supplementary figure A2_B%%%%%
 %Plots estimated skew regressions from Widemo and Owens (1995): modified 
 %regression from digitized reported line, extracted predictions from 
 %reported line, and reported regression. 
@@ -25,7 +25,7 @@ y_limits=[0 1.0];
 x_ticks=[0 1 2 3 4 5 6 7 8 9 10];
 %X_tick_labels=[];
 y_ticks=[0.00 0.2 0.4 0.6 0.8 1.0];
-titles_spot=[-1.2 1.05];
+titles_spot=[0.5 1.01];
 x_axis_tit="Residents/lek";
 
 %plot relationships
@@ -48,8 +48,8 @@ Skew_extractions=subplot(2,2,2);
         yticks(y_ticks)
         %xticklabels(X_tick_labels)
         set(Skew_extractions,'Fontsize',15)
-        title("B",'FontSize',24)
-        title ( 'B' , 'position' , titles_spot)
+        title("(b)",'FontSize',24)
+        title ( '(b)' , 'position' , titles_spot, 'FontWeight', 'Normal')
         %ylabel(y_axis_tit,'FontSize',17)
         xlabel(x_axis_tit,'FontSize',18)
         set(Skew_extractions,'box','off','TickDir','out','yticklabel',...
@@ -60,13 +60,6 @@ Skew_extractions=subplot(2,2,2);
         
  
 end
- 
-
-
-
-
-
-
  
 
 
