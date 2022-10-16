@@ -1,4 +1,4 @@
-function CDB = PlotSupplementalFigB3()
+function CDB = PlotAppendixFigA3()
 %This is a script for displaying the co-display benefits
 %for each lek under each fitness loss scenarios due to co-display. 
 %Define hypotheses
@@ -59,9 +59,3 @@ legend boxoff
 end
  
  
- 
-
-
-
-
-
