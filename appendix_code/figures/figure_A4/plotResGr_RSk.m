@@ -1,5 +1,5 @@
-function GrRskPlot = plotResGr_RSk()
-%%%%%Subplot function for supplementary figure B4_D%%%%%
+function GrRSkPlot = plotResGr_RSk()
+%%%%%Subplot function for supplementary figure A4_D%%%%%
 %Plot of predicted resident copulation rewards given the fitness loss
 %scenario where the most copulations are drawn away from low 
 %ranking residents by a co-display.
@@ -53,52 +53,21 @@ Mat_G_Res_r(1:7,7)=[Res_reward(7,1,h,Sat_Com_ab,Comp_level),...
 
   
  
-Title_plot="D"; 
-X_axesLimits=[0 8];
-Y_axesLimits=[0 8];
-Y_and_X_ticks=[1 2 3 4 5 6 7];
-Y_and_X_tick_labels=["" "" "" "" "" "" ""];
-Title_position=[-1.5 0 1.1];
-X_label="Residents/lek";
-%Make a figure
-GrRskPlot=subplot(2,2,4);
-        Cbar3(Mat_G_Res_r,Mat_G_Res_r)
-        xlabel(X_label,'Position',[4.05,9,0])
-        xlim(X_axesLimits)
-        ylim(Y_axesLimits)
-        xticks(Y_and_X_ticks)
-        yticks(Y_and_X_ticks)
-        xticklabels(Y_and_X_tick_labels)
-        yticklabels(Y_and_X_tick_labels)
-        %y tick labels
-        text(-0.65,0.87,0,'\alpha','color',[0.0 0.0 0.0],'FontSize',19)
-        text(-0.65,1.9,0,'\beta','color',[0.0 0.0 0.0],'FontSize',19)
-        text(-0.65,2.87,0,'\gamma','color',[0.0 0.0 0.0],'FontSize',19)
-        text(-0.6,3.9,0,'\delta','color',[0.0 0.0 0.0],'FontSize',19)
-        text(-0.6,4.87,0,'\epsilon','color',[0.0 0.0 0.0]','FontSize',19)
-        text(-0.6,5.9,0,'\zeta','color',[0.0 0.0 0.0],'FontSize',19)
-        text(-0.65,6.87,0,'\eta','color',[0.0 0.0 0.0],'FontSize',19)
-        %x tick labels
-        text(0.78,8.4,0,'1','color',[0.0 0.0 0.0],'FontSize',18)
-        %text(1.78,8.4,0,'2','color',[0.5 0.5 0.5],'FontSize',18)
-        text(2.78,8.4,0,'3','color',[0.0 0.0 0.0],'FontSize',18)
-        %text(3.78,8.4,0,'4','color',[0.5 0.5 0.5],'FontSize',18)
-        text(4.78,8.4,0,'5','color',[0.0 0.0 0.0],'FontSize',18)
-        %text(5.78,8.4,0,'6','color',[0.5 0.5 0.5],'FontSize',18)
-        text(6.78,8.4,0,'7','color',[0.0 0.0 0.0],'FontSize',18)
-        az = 0;
-        el = 90;
-        view(az, el);
-        a = get(GrRskPlot,'XTickLabel'); 
-        set(GrRskPlot,'XTickLabel',a,'Fontsize',18)
-        title(Title_plot,'FontSize',24)
-        title (Title_plot, 'position' , Title_position)   
-        colormap(flipud(hot));
-        set(GrRskPlot,'Position',[0.399 0.15 0.3347 0.3412])
-        set(GrRskPlot,'TickDir','out')
-        caxis manual
-        caxis([-2.00 4.00]);
-        grid off
+Title_plot="(d)"; 
+sub_plot_num=4;
+subplot_position=[0.399 0.14 0.3347 0.3412];
+response_colormap=colormap_Res_rewards( );
+color_axis_limits=[-2.00 4.00];
+C_ticks=[];
+c_ram_dec=[];
+C_ramp_position=[0 0 0 0];
+C_axis_lab=[];
+%%%plot
+GrRSkPlot = ...
+    plot_response_rank_and_lek_size_four_subplot...
+    (Title_plot, sub_plot_num,subplot_position,Mat_G_Res_r,...
+    response_colormap,color_axis_limits,C_ramp_position,C_ticks,...
+    c_ram_dec,C_axis_lab);
 
 end
    
