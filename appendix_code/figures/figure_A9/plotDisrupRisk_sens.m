@@ -1,5 +1,5 @@
 function DrPlot = plotDisrupRisk_sens(Comp_level)
-%%%%%Subplot function for supplementary figure D1_D,F,G%%%%%
+%%%%%Subplot function for supplementary figure A9_d,f,g%%%%%
 %Plot of assumed function for resident disruption risk, under different 
 %levels of resident competition levels, Comp_level, which can be specified
 %as low, medium, or high.
@@ -47,11 +47,11 @@ X_axesLimits=[0 8];
 Y_axesLimits=[0 8];
 Y_and_X_ticks=[1 2 3 4 5 6 7];
 Y_and_X_tick_labels=["" "" "" "" "" "" ""];
-Title_position=[-1.5 0 1.1];
+Title_position=[0.75 0 1.1];
 X_label="Lek size (Residents/lek)";
 switch Comp_level
     case "low"
-        Title_plot="D"; 
+        Title_plot="(d)"; 
         %Make a figure
         DrPlot=subplot(3,2,2);
                 Cbar3(MatRisk,MatRisk)
@@ -83,15 +83,16 @@ switch Comp_level
                 a = get(DrPlot,'XTickLabel'); 
                 set(DrPlot,'XTickLabel',a,'Fontsize',12)
                 title(Title_plot,'FontSize',24)
-                title (Title_plot, 'position' , Title_position)   
-                colormap(DrPlot,flipud(copper));
+                title (Title_plot, 'position' , Title_position,'FontWeight',...
+            'Normal')   
+                colormap(colormap_Res_RHP_Dr( ));
                 caxis manual
                 caxis([0.0 1.0])
                 set(DrPlot,'Position',[0.4103 0.7093 0.3347 0.2157])
                                                               grid off
        set(DrPlot,'TickDir','out')
     case "medium"
-        Title_plot="E"; 
+        Title_plot="(e)"; 
         %Make a figure
         DrPlot=subplot(3,2,4);
                 Cbar3(MatRisk,MatRisk)
@@ -123,15 +124,16 @@ switch Comp_level
                 a = get(DrPlot,'XTickLabel'); 
                 set(DrPlot,'XTickLabel',a,'Fontsize',12)
                 title(Title_plot,'FontSize',24)
-                title (Title_plot, 'position' , Title_position)   
-                colormap(DrPlot,flipud(copper));
+                title (Title_plot, 'position' , Title_position, 'FontWeight',...
+            'Normal')   
+                colormap(colormap_Res_RHP_Dr( ));
                 caxis manual
                 caxis([0.0 1.0])
                 set(DrPlot,'Position',[0.4103 0.4096 0.3347 0.2157])
                                                               grid off
        set(DrPlot,'TickDir','out')
     case "high"
-        Title_plot="F"; 
+        Title_plot="(f)"; 
         %Make a figure
         DrPlot=subplot(3,2,6);
                 Cbar3(MatRisk,MatRisk)
@@ -164,8 +166,9 @@ switch Comp_level
                 a = get(DrPlot,'XTickLabel'); 
                 set(DrPlot,'XTickLabel',a,'Fontsize',12)
                 title(Title_plot,'FontSize',24)
-                title (Title_plot, 'position' , Title_position)   
-                colormap(DrPlot,flipud(copper));
+                title (Title_plot, 'position' , Title_position, 'FontWeight',...
+            'Normal')   
+                colormap(colormap_Res_RHP_Dr( ));
                 caxis manual
                 caxis([0.0 1.0])
                 set(DrPlot,'Position',[0.4103 0.1100 0.3347 0.2157])
