@@ -12,3 +12,4 @@ F_Res_total= Total_res_cops( L,h );
 FSatandRes = round(F_Lek - F_Res_total,4);
 end
 
+
