@@ -17,3 +17,4 @@ M_Res_r = Mono_coeff( L,r,Sat_strength,Comp_level);
 C_Res_r = (F_r + F_SatandRes)*M_Res_r;
 end
 
+
