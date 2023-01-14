@@ -8,3 +8,4 @@ Gs = Satellite_rewards( L,r,H,Sat_strength,Comp_level );
 Psc = round((Gs/Ft) * 100);
 
 end
+
