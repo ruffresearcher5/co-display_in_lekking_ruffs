@@ -20,4 +20,7 @@ switch Sat_com_ab
     case "weak"
         M_Res_r=1/(1+exp(-11/((r*L)+D_r))); 
 end
+end
+
+
 
