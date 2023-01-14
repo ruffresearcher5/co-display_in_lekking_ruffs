@@ -3,6 +3,7 @@ function Sd = NewSkewLM( L,r,h, Sat_strength,Comp_level)
 %co-displays with a resident of r rank on a lek with L residents under one
 %of the four fitness loss scenarios h when the satellite has a competitive
 %ability Sat_strength and competition between residents is Comp_level.
+
 if r == 1
 
     alphacops=Res_payoffs( L,r,h,Sat_strength,Comp_level);
