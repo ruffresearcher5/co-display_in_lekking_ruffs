@@ -1,7 +1,7 @@
 %%%%%Script for ploting supplementary figure A2. Resident copulations 
 %during solo display%%%
 
-Figure_B3=figure;
+Figure_A2=figure;
     Plot_A=plotResCopWOSat_Null();
     Plot_B=plotResCopWOSat_UP();
     Plot_C=plotResCopWOSat_Sk();
