@@ -19,7 +19,7 @@ y_limits=[0 1.0];
 x_ticks=[1 2 3 4 5 6 7];
 y_ticks=[0.00 0.25 0.50 0.75 1.00];
 X_tick_labels=["1" "" "3" "" "5" "" "7"];
-titles_spot=[-1.9 1.0];
+titles_spot=[0.6 1.0];
 x_axis_tit="Residents/lek";
 y_axis_tit="Resident mating skew";
 
@@ -39,12 +39,12 @@ y_axis_tit="Resident mating skew";
         yticks(y_ticks)
         xticklabels(X_tick_labels)
         set(plotD,'Fontsize',18)
-        title("D",'FontSize',24)
-        title ( 'D' , 'position' , titles_spot)
+        title("(d)",'FontSize',24, 'FontWeight','Normal')
+        title ( '(d)' , 'position' , titles_spot)
         ylabel(y_axis_tit,'FontSize',20)
         xlabel(x_axis_tit,'FontSize',19)
         set(plotD,'box','off','TickDir','out','yticklabel',num2str(get(gca,'ytick')','%.2f'))
-        set(plotD,'Position',[0.58 0.1100 0.17 0.34])
+        set(plotD,'Position',[0.565 0.1100 0.17 0.34])
         LEG=legend('No co-display','Co-display','Location','southeast');
         %set(plotD,'Position',[0.2250 0.07 0.1594 0.2391])
         LEG.FontSize = 12;
