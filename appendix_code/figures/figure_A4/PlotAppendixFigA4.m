@@ -14,8 +14,3 @@ Figure_A4=figure;
             'Color','black','FontSize',18,'Rotation',90)
         set(hr1,'TickDir','out','xticklabel',num2str(get(hr1,'xtick')',...
             '%.2f'))
-
- 
-
-    
-
