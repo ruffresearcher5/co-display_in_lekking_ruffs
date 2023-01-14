@@ -6,53 +6,31 @@ function SatproskPlot = plotSatProportion_main_text()
   
 h="Sk";
 %matrix for predicted values from function
-MatSatPr=zeros(7,7);
+
 %Satellite competitive ability
 Comp_level="medium";
 Sat_Com_ab="medium";
-%Resident copulation gains by lek size
-%L=1
-MatSatPr(1:7,1)=[Satellite_proportion(1,1,h,Sat_Com_ab,Comp_level),...
-    nan,nan,nan,nan,nan,nan];
-%L=2
-MatSatPr(1:7,2)=[Satellite_proportion(2,1,h,Sat_Com_ab,Comp_level),...
-    Satellite_proportion(2,2,h,Sat_Com_ab,Comp_level),nan,nan,nan,nan,nan];
-%L=3
-MatSatPr(1:7,3)=[Satellite_proportion(3,1,h,Sat_Com_ab,Comp_level),...
-    Satellite_proportion(3,2,h,Sat_Com_ab,Comp_level),...
-    Satellite_proportion(3,3,h,Sat_Com_ab,Comp_level),...
-    nan,nan,nan,nan];
-%L=4
-MatSatPr(1:7,4)=[Satellite_proportion(4,1,h,Sat_Com_ab,Comp_level),...
-    Satellite_proportion(4,2,h,Sat_Com_ab,Comp_level),...
-    Satellite_proportion(4,3,h,Sat_Com_ab,Comp_level),...
-    Satellite_proportion(4,4,h,Sat_Com_ab,Comp_level),nan,nan,nan];
-%L=5
-MatSatPr(1:7,5)=[Satellite_proportion(5,1,h,Sat_Com_ab,Comp_level),...
-    Satellite_proportion(5,2,h,Sat_Com_ab,Comp_level),...
-    Satellite_proportion(5,3,h,Sat_Com_ab,Comp_level),...
-    Satellite_proportion(5,4,h,Sat_Com_ab,Comp_level),...
-    Satellite_proportion(5,5,h,Sat_Com_ab,Comp_level),nan,nan];
-%L=6
-MatSatPr(1:7,6)=[Satellite_proportion(6,1,h,Sat_Com_ab,Comp_level),...
-    Satellite_proportion(6,2,h,Sat_Com_ab,Comp_level),...
-    Satellite_proportion(6,3,h,Sat_Com_ab,Comp_level),...
-    Satellite_proportion(6,4,h,Sat_Com_ab,Comp_level),...
-    Satellite_proportion(6,5,h,Sat_Com_ab,Comp_level),...
-    Satellite_proportion(6,6,h,Sat_Com_ab,Comp_level),nan];
-%L=7
-MatSatPr(1:7,7)=[Satellite_proportion(7,1,h,Sat_Com_ab,Comp_level),...
-    Satellite_proportion(7,2,h,Sat_Com_ab,Comp_level),...
-    Satellite_proportion(7,3,h,Sat_Com_ab,Comp_level),...
-    Satellite_proportion(7,4,h,Sat_Com_ab,Comp_level),...
-    Satellite_proportion(7,5,h,Sat_Com_ab,Comp_level),...
-    Satellite_proportion(7,6,h,Sat_Com_ab,Comp_level),...
-    Satellite_proportion(7,7,h,Sat_Com_ab,Comp_level)];
+%Proportion of satellite copulations within a co-display
 
+Title_plot="(c)"; 
+sub_plot_num=3;
+subplot_position=[0.174 0.1100 0.3347 0.3412];
+MatSatPr = get_all_Sat_prop_co_dis( h,Sat_Com_ab,Comp_level);
+response_colormap=colormap_sat_prop( );
+color_axis_limits=[0.0 1.00];
+C_ticks=[0.00 0.25 0.50 0.75 1.00];
+c_ram_dec='%.2f';
+C_ramp_position=[0.4325 0.11 0.02 0.345];
+C_axis_lab='       Satellite proportion';
+%%%plot
+SatproskPlot = ...
+    plot_response_rank_and_lek_size_four_subplot...
+    (Title_plot, sub_plot_num,subplot_position,MatSatPr,...
+    response_colormap,color_axis_limits,C_ramp_position,C_ticks,...
+    c_ram_dec,C_axis_lab);
 
-  
  
-
+%{
 X_axesLimits=[0 8];
 Y_axesLimits=[0 8];
 Y_and_X_ticks=[1 2 3 4 5 6 7];
@@ -96,7 +74,7 @@ Y_label="Resident rank";
                 Title_plot="C";
                 title(Title_plot,'FontSize',24)
                 title (Title_plot, 'position' , Title_position)   
-                colormap(SatproskPlot,cool);
+                colormap(SatproskPlot,Sat_prop_colormap);
                 caxis manual
                 caxis([0.0 1.00]);
                 set(SatproskPlot,'Position',[0.174 0.1100 0.3347 0.3412])
@@ -113,6 +91,7 @@ Y_label="Resident rank";
                     set(hr1,'color',[0.0 0.0 0.0])
                 grid off
                 set(SatproskPlot,'TickDir','out')
+    %}
 end
 
 
