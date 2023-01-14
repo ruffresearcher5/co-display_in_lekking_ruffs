@@ -14,9 +14,3 @@ Figure_A7=figure;
             'Color','black','FontSize',18,'Rotation',90)
     set(hr1,'TickDir','out','xticklabel',num2str(get(hr1,'xtick')',...
             '%.1f'))
-
-    
-    %graphing domains realistic copulation percentages
-    text(11.3,4.0,0,{'< 10%'},'Color',[0.5 0.5 0.5],'FontSize',20,'Rotation',90)
-    text(11.3,-5.2,0,[char(8805) '10%'],...
-            'Color',[0.8359 0.2431 0.3098],'FontSize',20,'Rotation',90)
