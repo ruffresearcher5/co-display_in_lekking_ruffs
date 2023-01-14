@@ -6,5 +6,5 @@ function F_Lek = Total_cops_on_lek( L )
 %   full description.
 
 F_Lek = (-0.00008 + ((0.02066)/((1+exp(-1.842*((L+1) - 3.290))))))*444;
-end
+end 
 
