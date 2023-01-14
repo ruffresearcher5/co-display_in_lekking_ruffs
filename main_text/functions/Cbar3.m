@@ -33,3 +33,4 @@ function remove_empty_bars(hBars)
   end
 end
 end
+
