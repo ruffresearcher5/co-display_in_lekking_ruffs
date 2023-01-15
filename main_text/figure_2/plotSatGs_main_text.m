@@ -4,7 +4,7 @@ function GsskPlot = plotSatGs_main_text()
 %scenario where most copulations are drawn away from high
 %ranking residents by a co-display. 
 %scenario
-h="UP";
+h="Sk";
 %Satellite competitive ability and competition between residents
 Sat_Com_ab="medium";
 Comp_level="medium";
