@@ -1,5 +1,5 @@
 function MrPlot = plotMonoCoeff()
-%%%%%Subplot function for supplementary figure B8_A%%%%%
+%%%%%Subplot function for supplementary figure A8_a%%%%%
 %Plot of assumed function for resident monopolization coefficients. 
  
 %matrix for predicted values from function
@@ -49,11 +49,11 @@ MatMono(1:7,7)=[Mono_coeff(7,1,Sat_Com_ab,Comp_level),...
  
   
  
-Title_plot="A"; 
+Title_plot="(a)"; 
 X_axesLimits=[0 8];
 Y_axesLimits=[0 8];
 C_Bticks=[0.00 0.25 0.50 0.75 1.00]; 
-Title_position=[-1.5 0 1.1];
+Title_position=[0.75 0 1.1];
 X_label="Residents/lek";
 Y_label="Resident rank";
 Y_and_X_ticks=[1 2 3 4 5 6 7];
@@ -91,9 +91,9 @@ MrPlot=subplot(2,2,1);
         view(az, el);
         a = get(MrPlot,'XTickLabel'); 
         set(MrPlot,'XTickLabel',a,'Fontsize',18)
-        title(Title_plot,'FontSize',24)
+        title(Title_plot,'FontSize',24, 'FontWeight', 'Normal')
         title (Title_plot, 'position' , Title_position)   
-        colormap(MrPlot,flipud(autumn));
+        colormap(colormap_Res_RHP_Dr())
         caxis manual
         caxis([0.00 1.00]);
         set(MrPlot,'zticklabel',num2str(get(gca,'ztick')','%.2f'),...
@@ -101,13 +101,13 @@ MrPlot=subplot(2,2,1);
         hr1 = colorbar('Ticks',[],'Position',[0.387 0.606 0.02 0.3],...
             'YAxisLocation','right','XTick', C_Bticks);
         hr1.Limits = [0.0 1.0];
-        text(8.4,7.3,0,{'Monopolization coefficient'},...
+        text(8.5,4.6,0,{'RHP'},...
             'Color','black','FontSize',18,'Rotation',90)
         set(hr1,'TickDir','out','xticklabel',num2str(get(hr1,'xtick')',...
             '%.2f'))
         %set(MrPlot,'Position',[0.154 0.15 0.3347 0.3412])
         grid off
-        set(MrPlot,'TickDir','out')
+        set(MrPlot,'TickDir','out', 'FontWeight', 'Normal')
 
 end
    
